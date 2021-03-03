@@ -22,7 +22,7 @@ export default {
     },
     click: {
       type: Boolean,
-      default: false
+      default: true
     },
   },
   data() {
@@ -46,7 +46,6 @@ export default {
     if (this.pullUpLoad) {
       this.scroll.on("pullingUp", () => {
         this.$emit("pullingUp");
-        console.log("上拉加载更多")
       })
     }
   },
